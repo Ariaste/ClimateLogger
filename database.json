@@ -1,0 +1,36 @@
+{
+    "calculations": {
+        "inside": {
+            "temperature": {
+                "average_current_month": 0,
+                "average": 0
+            },
+            "humidity": {
+                "average_current_month": 0,
+                "average": 0
+            }
+        },
+        "outside:": {
+            "temperature": {
+                "average_current_month": 0,
+                "average": 0
+            },
+            "humidity": {
+                "average_current_month": 0,
+                "average": 0
+            }
+        }
+    },
+    "logs":{
+        "2022-10-15_14-45" : {
+            "inside": {
+                "temperature": 0,
+                "humidity": 0
+            },
+            "outside": {
+                "temperature": 0,
+                "humidity": 0
+            }
+        }
+    }
+}
