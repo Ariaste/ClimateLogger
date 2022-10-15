@@ -36,13 +36,26 @@ def log_climate_data(ip_inside, ip_outside, database_file):
         for line in database:
             file.write(str(line))
 
-            
+
 def calculate_average():
-    pass
+    database = json.loads("".join(get_data_base()))
+    logs_keys = database["logs"].keys()
+    average_temperature_inside = 0
+    average_temperature_outside = 0
+    average_temperature_inside_month = 0
+    average_temperature_outside_month = 0
+    for key in logs_keys:
+        average_temperature_inside += database["logs"][key]["inside"]["temperature"]
+        average_temperature_outside += database["logs"][key]["outside"]["temperature"]
+    average_temperature_inside = round(average_temperature_inside / len(logs_keys), 2)
+    average_temperature_outside = round(average_temperature_outside / len(logs_keys), 2)
+    print(str(average_temperature_inside) + " " + str(average_temperature_outside))
+
 
 
 def main():
-    print(log_climate_data("192.168.2.119", "192.168.2.119", "database_test.json"))
+    calculate_average()
+
 
 
 if __name__ == '__main__':

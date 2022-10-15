@@ -1,6 +1,7 @@
 {
     "calculations": {
-        "inside": {
+        "month": {
+            "inside": {
             "temperature": {
                 "average_current_month": 0,
                 "average": 0
@@ -9,27 +10,48 @@
                 "average_current_month": 0,
                 "average": 0
             }
-        },
-        "outside:": {
-            "temperature": {
-                "average_current_month": 0,
-                "average": 0
             },
-            "humidity": {
-                "average_current_month": 0,
-                "average": 0
+            "outside:": {
+                "temperature": {
+                    "average_current_month": 0,
+                    "average": 0
+                },
+                "humidity": {
+                    "average_current_month": 0,
+                    "average": 0
+                }
             }
         }
     },
     "logs":{
-        "2022-10-15_14-45" : {
+        "2022-10-15_17-33-52" : {
             "inside": {
-                "temperature": 0,
-                "humidity": 0
+                "temperature": 23.54,
+                "humidity": 60.53
             },
             "outside": {
-                "temperature": 0,
-                "humidity": 0
+                "temperature": 23.52,
+                "humidity": 60.58
+            }
+		},
+         "2022-10-15_18-31-46" : {
+            "inside": {
+                "temperature": 19.88,
+                "humidity": 74.22
+            },
+            "outside": {
+                "temperature": 19.86,
+                "humidity": 74.24
+            }
+		},
+         "2022-10-15_18-31-57" : {
+            "inside": {
+                "temperature": 19.86,
+                "humidity": 74.40
+            },
+            "outside": {
+                "temperature": 19.85,
+                "humidity": 74.41
             }
         }
     }
