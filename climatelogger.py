@@ -38,6 +38,7 @@ def log_climate_data(ip_inside, ip_outside):
     with open("database.json", "w") as file:
         file.seek(0)
         file.write(json.dumps(database))
+    print(climate_json)
 
 def calculate_average():
     current_month = str(datetime.datetime.now().month)
@@ -93,7 +94,7 @@ def calculate_average():
 
 def main():
     while True:
-        log_climate_data("192.168.2.119", "192.168.2.119")
+        log_climate_data("192.168.2.119", "192.168.2.120")
         calculate_average()
         time.sleep(600)
 
